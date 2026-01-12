@@ -114,7 +114,6 @@ void reload_trees(TreeCollectionPtr &to_replace, const std::vector<std::string>&
         }
     }
     to_replace.reset(next);
-    init.terminate();
     fprintf(stderr, "finish loading the tree\n");
 }
 void refresh_tree(TreeCollectionPtr &to_replace, std::fstream &tree_paths) {
@@ -583,7 +582,6 @@ static void tree_update_watch(int refresh_period, std::mutex& done_mutex,std::co
                     }
                 }
             }
-            init.terminate();
         }
     }
 }
