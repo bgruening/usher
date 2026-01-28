@@ -3,6 +3,7 @@
 #include <atomic>
 #include <boost/filesystem/operations.hpp>
 #include <boost/filesystem/path.hpp>
+#include <boost/filesystem.hpp>
 #include <boost/program_options.hpp>
 #include <boost/program_options/value_semantic.hpp>
 #include <cerrno>
