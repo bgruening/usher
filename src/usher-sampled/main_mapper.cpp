@@ -487,8 +487,6 @@ place_main_tree(const std::vector<To_Place_Sample_Mutation> &mutations,
         }
     }
     output.targets.push_back(target);
-    std::vector<To_Place_Sample_Mutation> initial_muts = mutations;
-    initial_muts.push_back(temp);
 
     Main_Tree_Searcher main_tree_task_root{0,main_tree.root,
                        output
